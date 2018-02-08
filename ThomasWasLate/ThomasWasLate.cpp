@@ -6,6 +6,7 @@
 
 int main()
 {
-    return 0;
+	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML WORKS!");
+	return 0;
 }
 
