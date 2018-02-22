@@ -152,6 +152,7 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextureHolder.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ThomasWasLate.cpp" />
