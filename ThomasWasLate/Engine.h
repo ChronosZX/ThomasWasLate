@@ -32,7 +32,7 @@ private: //cannot be seen by other classes and subclasses
 	View m_HUDView;
 
 	//sprite and texture for background
-	Sprite m_BackgroundTexture;
+	Sprite m_BackgroundSprite;
 	Texture m_BackgroundTexture;
 
 	//Is the game currently playing

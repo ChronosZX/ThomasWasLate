@@ -1,17 +1,22 @@
-﻿Build started 22/02/2018 10:08:49.
+﻿Build started 22/02/2018 10:32:02.
      1>Project "C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\ThomasWasLate.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"SFML-2.4.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ThomasWasLate.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt TextureHolder.cpp main.cpp
-         main.cpp
-         TextureHolder.cpp
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"SFML-2.4.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ThomasWasLate.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Engine.cpp
+         Engine.cpp
+     1>c:\users\0911014\documents\github\thomaswaslate\thomaswaslate\engine.cpp(10): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\0911014\documents\github\thomaswaslate\thomaswaslate\engine.cpp(11): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\0911014\documents\github\thomaswaslate\thomaswaslate\engine.cpp(13): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.exe" /INCREMENTAL /NOLOGO /LIBPATH:"SFML-2.4.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-network-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.lib" /MACHINE:X86 Debug\TextureHolder.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.exe" /INCREMENTAL /NOLOGO /LIBPATH:"SFML-2.4.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-network-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.lib" /MACHINE:X86 Debug\Engine.obj
+         Debug\TextureHolder.obj
          Debug\main.obj
          Debug\stdafx.obj
-         ThomasWasLate.vcxproj -> C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.exe
-     1>Done Building Project "C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\ThomasWasLate.vcxproj" (Build target(s)).
+     1>Engine.obj : error LNK2019: unresolved external symbol "private: void __thiscall Engine::input(void)" (?input@Engine@@AAEXXZ) referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+     1>Engine.obj : error LNK2019: unresolved external symbol "private: void __thiscall Engine::update(float)" (?update@Engine@@AAEXM@Z) referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+     1>Engine.obj : error LNK2019: unresolved external symbol "private: void __thiscall Engine::draw(void)" (?draw@Engine@@AAEXXZ) referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+     1>C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\Debug\ThomasWasLate.exe : fatal error LNK1120: 3 unresolved externals
+     1>Done Building Project "C:\Users\0911014\Documents\GitHub\ThomasWasLate\ThomasWasLate\ThomasWasLate.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:03.00
+Time Elapsed 00:00:00.81
