@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "Engine.h"
 
+
+
 void Engine::input()
 {
 	Event event;
@@ -36,5 +38,19 @@ void Engine::input()
 		} //end if key pressed
 
 	}//end while event polling
+
+	//Handle Input specific to Thomas
+	if (m_Thomas.handleInput())
+	{
+		//TODO - PLAY JUMPING SOUND
+
+	}
+
+	//Handle Input specific to Bob
+	if (m_Bob.handleInput())
+	{
+		//TODO - PLAY JUMPING SOUND
+
+	}
 
 } //end input()

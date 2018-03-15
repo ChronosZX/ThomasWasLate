@@ -1,6 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "TextureHolder.h"
+#include "Thomas.h"
+#include "Bob.h"
+
 
 using namespace sf;
 //CALLUM NO DON'T USE USING IN .h FILES
@@ -11,6 +14,10 @@ class Engine
 private: //cannot be seen by other classes and subclasses
 	TextureHolder th;
 	//CALLUM DON'T NAME THINGS "th" (SINGLE LETTER ABBREVIATIONS)
+
+	//our playable characters
+	Thomas m_Thomas;
+	Bob m_Bob;
 
 	const int TILE_SIZE = 50;
 	const int VERTS_IN_QUAD = 4;
