@@ -20,5 +20,10 @@ public:
 
 	float getTimeLimit();
 	Vector2f getStartPosition();
+	int** nextLevel(VertexArray& rVaLevel);
+	Vector2i getLevelSize();
+	int getCurrentLevel();
+
+
 
 }; //end class level manager

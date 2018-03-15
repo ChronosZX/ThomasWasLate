@@ -80,4 +80,17 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 	string row;
 	int y = 0;
 
+	while (inputFile >> row)
+	{
+		for (int x = 0; x < row.length(); x++)
+		{
+			const char val = row[x];
+			arrayLevel[y][x] = atoi(&val);
+		}
+
+		y++;
+	}
+	//close file when done
+	inputFile.close();
+
 }//end function nextlevel
