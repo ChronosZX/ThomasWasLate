@@ -10,15 +10,7 @@ void Engine::update(float dtAsSeconds)
 	//TEMP CODE********
 	if (m_NewLevelRequired)
 	{
-		//NOTE THIS WILL BE MOVED TO loadLevel() later
-		//Spawn Thomas and Bob
-
-		m_Thomas.spawn(Vector2f(0, 0), GRAVITY);
-		m_Bob.spawn(Vector2f(100, 0), GRAVITY);
-
-		//initalise time and level boolean
-		m_TimeRemaining = 10;
-		m_NewLevelRequired = false;
+		loadLevel();
 
 	}
 

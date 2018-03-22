@@ -25,6 +25,10 @@ Engine::Engine()
 	m_BackgroundTexture = TextureHolder::GetTexture("graphics/background.png");
 
 	m_BackgroundSprite.setTexture(m_BackgroundTexture);
+
+	//load the texture for the backgorund vextex array
+	m_TextureTiles = TextureHolder::GetTexture("graphics/tiles_sheet.png");
+
 }
 
 void Engine::run()
