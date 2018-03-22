@@ -43,7 +43,7 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 	//loop through all nearby blocks
 	for (int x = startX; x < endX; ++x)
 	{
-		for (int y = startY;y < endY;++x)
+		for (int y = startY;y < endY;++y)
 		{
 			//set up current block
 			block.left = x* TILE_SIZE;
