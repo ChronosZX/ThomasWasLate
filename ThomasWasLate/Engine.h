@@ -80,6 +80,10 @@ private:
 	//load level
 	void loadLevel();
 
+	//detect collisions
+	//POLYMORPHISM
+	bool detectCollisions(PlayableCharacter& character);
+
 public:
 	//Constructor
 	Engine();
