@@ -57,6 +57,20 @@ void Engine::update(float dtAsSeconds)
 
 	}//end if playing
 
+	for (auto it = m_FireEmitters.begin(); it != m_FireEmitters.end(); it++)
+	{
+		float posX = (*it).x;
+		float posY = (*it).y;
+
+		FloatRect localRect(posX - 250, posY - 250, 500, 500);
+
+		if (m_Thomas.getPosition().intersects(localRect))
+		{
+			m_SM.playFire(Vector2f(posX, posY), m_Thomas.getCenter());
+		}
+
+	}
+
 	//set view around the appropriate characters
 	if (m_SplitScreen)
 	{

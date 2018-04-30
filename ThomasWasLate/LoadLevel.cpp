@@ -16,6 +16,9 @@ void Engine::loadLevel()
 	//and repopulate the vertex array as well
 	m_ArrayLevel = m_LM.nextLevel(m_VALevel);
 
+	populateEmitters(m_FireEmitters, m_ArrayLevel);
+
+
 	//how long is the new time limit?
 	m_TimeRemaining = m_LM.getTimeLimit();
 

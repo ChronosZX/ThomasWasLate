@@ -42,7 +42,8 @@ void Engine::input()
 	//Handle Input specific to Thomas
 	if (m_Thomas.handleInput())
 	{
-		//TODO - PLAY JUMPING SOUND
+	m_SM.playJump();
+
 
 	}
 
@@ -50,6 +51,7 @@ void Engine::input()
 	if (m_Bob.handleInput())
 	{
 		//TODO - PLAY JUMPING SOUND
+		m_SM.playJump();
 
 	}
 
